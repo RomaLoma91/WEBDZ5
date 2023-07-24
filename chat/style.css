@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+}
+p, input, button, h1, h3, label {
+    font-family: sans-serif;
+}
+#page {
+    width: 100%;
+}
+#chat {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+h1 {
+    color: #000000;
+    margin-left: 10px;
+}
+#messages {
+    padding: 10px;
+    margin: 20px 0px;
+    width: 50%;
+    margin: 20px auto;
+}
+#messages .message {
+    width: 100%;
+    background: #fcecec;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    transition: all .3 ease-in;
+    font-size: 13px;
+}
+#messages .message h3 {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    color: #e8a515;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+#messages .message p {
+    text-align: justify;
+}
+#control {
+    width: 50%;
+    margin: 20px auto;
+}
+#control textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b7b7b7;
+    border-radius: 10px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 150px;
+    height: 40px;
+    transition: all 0.3s ease-in;
+}
+#control textarea:focus {
+    height: 150px;
+}
+#control label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+#control textarea {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#control button {
+    text-transform: uppercase;
+    font-size: 12px;
+    display: inline-block;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #b7b7b7;
+    color: #fff;
+}
+#control button:hover {
+    background: #787777;
+}
+#control button.btn-send {
+    background: #3bc75c;
+    color: #fff;
+}
+#control button.btn-send:hover {
+    background: #2a9042;
+}
